@@ -147,7 +147,7 @@ def announce_sensors_for_site(client: mqtt.Client, site_name: str):
         f"solarbank_e1600_{site_name}_output_power",
         f"{S2M_MQTT_TOPIC}/{site_name}/scene_info",
         "{{ value_json.solarbank_info.total_output_power | float }}",
-        "power",
+        "energy",
         "W"
     )
 
